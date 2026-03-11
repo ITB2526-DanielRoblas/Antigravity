@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "Bash Scripting & Automation",
+    "description": "Project focused on automating tasks in Linux systems using Bash scripts. Includes backup automation, user management, and process monitoring.",
+    "tags": ["Linux", "Bash", "Automation"],
+    "pdf": "pdf/projecte1-bash.pdf",
+    "image": "https://img.icons8.com/isometric/512/terminal.png"
+  },
+  {
+    "id": 2,
+    "title": "High School Research (TDR)",
+    "description": "A research project investigating technical solutions using the scientific method. Comprehensive analysis and development of a personal interest topic.",
+    "tags": ["Research", "Scientific Method", "Documentation"],
+    "pdf": "pdf/projecte2-TDR.pdf",
+    "image": "https://img.icons8.com/isometric/512/search.png"
+  }
+]
