@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel Roblas | Portfolio Profesional</title>
+    <title>Daniel Roblas | Portfolio</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/main.js" defer></script>
     <script src="assets/js/projects.js" defer></script>
 </head>
 <body data-page="home">
     <header>
-        <div class="container container-nav">
+        <div class="container-nav">
             <nav>
-                <div class="logo">DR</div>
+                <div class="logo-container">
+                    <a href="#home"><img src="img/tech_logo.png" alt="Logo" class="logo-img"></a>
+                </div>
                 <ul class="nav-links">
                     <li><a href="#home">Inicio</a></li>
                     <li><a href="#about">Sobre Mí</a></li>
@@ -26,44 +28,40 @@
     <main>
         <section id="home" class="hero">
             <div class="container">
-                <h1 class="reveal">Daniel Roblas</h1>
-                <p class="reveal">Especialista en Administración de Sistemas Informáticos en Red (ASIX). Pasión por la automatización y la eficiencia tecnológica.</p>
-                <div class="reveal">
-                    <a href="#projects" class="btn btn-primary">Ver mis trabajos</a>
+                <h1 class="reveal">Daniel Roblas.</h1>
+                <p class="reveal">ASIX Specialist. Refining infrastructure with code and logic.</p>
+            </div>
+        </section>
+
+        <section id="about" class="about-section reveal">
+            <div class="container">
+                <div class="about-content">
+                    <p class="about-text">
+                        Administrador de Sistemas Informáticos en Red. <br>
+                        <span>Mi pasión es la arquitectura de sistemas eficiente. Transformo desafíos técnicos en infraestructuras resilientes y automatizadas.</span>
+                    </p>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="container reveal">
-            <h2 class="section-title">Sobre Mí</h2>
-            <div style="max-width: 800px; margin: 0 auto; text-align: center; color: var(--text-secondary);">
-                <p>Bienvenido a mi portafolio. Aquí comparto los proyectos más destacados desarrollados durante mi formación en ASIX. Mi enfoque se centra en la resolución de problemas reales a través de la administración avanzada de sistemas, la seguridad de redes y la automatización mediante scripting.</p>
-            </div>
-        </section>
-
         <section id="projects" class="container">
-            <h2 class="section-title reveal">Proyectos Destacados</h2>
+            <h2 class="section-title reveal">Trabajos.</h2>
             <div id="projects-container" class="projects-grid">
-                <!-- Projects will be loaded here via projects.js -->
-            </div>
-            <div style="text-align: center; margin-top: 4rem;" class="reveal">
-                <a href="llistat.html" class="btn btn-primary" style="background: transparent; border: 1px solid var(--accent); color: var(--accent);">Ver todos los proyectos</a>
+                <!-- Dynamic loading -->
             </div>
         </section>
 
-        <section id="contact" class="container reveal">
-            <h2 class="section-title">Contacto</h2>
-            <div style="text-align: center; background: var(--card-bg); padding: 3rem; border-radius: 20px; border: 1px solid var(--border);">
-                <h3>¿Tienes un proyecto en mente?</h3>
-                <p style="margin: 1rem 0 2rem 0; color: var(--text-secondary);">Estoy abierto a nuevas oportunidades y colaboraciones.</p>
-                <a href="mailto:daniel.roblas.7e9@itb.cat" class="btn btn-primary">daniel.roblas.7e9@itb.cat</a>
+        <section id="contact" class="container">
+            <div class="reveal" style="text-align: center;">
+                <h2 style="font-size: 4rem; margin-bottom: 2rem;">Hablemos.</h2>
+                <a href="mailto:daniel.roblas.7e9@itb.cat" class="btn btn-primary" style="font-size: 20px; padding: 18px 40px;">Enviar email</a>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Daniel Roblas. Hecho con pasión y código limpio.</p>
+            <p>&copy; 2025 Daniel Roblas. Designed with precision.</p>
         </div>
     </footer>
 </body>

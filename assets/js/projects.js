@@ -12,29 +12,30 @@ async function loadProjects(limit = null) {
 
         container.innerHTML = projects.map(project => `
             <div class="card reveal">
-                <img src="${project.image}" alt="${project.title}" class="card-icon">
-                <h3>${project.title}</h3>
-                <div class="tags">
-                    ${project.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                <div class="card-image-container">
+                    <img src="${project.image}" alt="${project.title}">
                 </div>
-                <p>${project.description}</p>
-                <a href="${project.pdf}" class="btn btn-primary" target="_blank">Ver Proyecto (PDF)</a>
+                <div class="card-content">
+                    <h3>${project.title}</h3>
+                    <p style="color: #a1a1a6;">${project.description}</p>
+                    <a href="${project.pdf}" class="btn btn-primary" style="width: fit-content;" target="_blank">Leer más</a>
+                </div>
             </div>
         `).join('');
 
-        // Re-run animation observer for new elements
+        // Re-run animation observer
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('active');
                 }
             });
-        });
+        }, { threshold: 0.1 });
+        
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
     } catch (error) {
         console.error('Error loading projects:', error);
-        container.innerHTML = '<p>Error cargando los proyectos.</p>';
     }
 }
 
