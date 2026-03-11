@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --bg-color: #000000;
-    --card-bg: #1c1c1e;
+    --bg-color: #0d1117;
+    --bg-gradient: radial-gradient(circle at 50% -20%, #1e293b 0%, #0d1117 80%);
+    --card-bg: rgba(22, 22, 23, 0.8);
     --text-primary: #ffffff;
     --text-secondary: #a1a1a6;
     --accent: #2997ff;
     --accent-hover: #66b2ff;
-    --glass: rgba(0, 0, 0, 0.75);
+    --glass: rgba(13, 17, 23, 0.75);
     --border: rgba(255, 255, 255, 0.1);
     --container-width: 1100px;
     --section-padding: 12rem;
@@ -22,6 +23,8 @@
 
 body {
     background-color: var(--bg-color);
+    background-image: var(--bg-gradient);
+    background-attachment: fixed;
     color: var(--text-primary);
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     line-height: 1.47059;
@@ -121,7 +124,6 @@ section {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: #000;
 }
 
 .hero h1 {
@@ -138,26 +140,41 @@ section {
 
 /* About Section - More Expansion */
 .about-section {
-    background: #000;
+    position: relative;
 }
 
 .about-content {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 4rem;
-    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .about-text {
-    font-size: 1.8rem;
-    font-weight: 500;
+    font-size: 2rem;
+    font-weight: 600;
     color: var(--text-primary);
-    line-height: 1.3;
+    line-height: 1.2;
+    margin-bottom: 4rem;
+    text-align: left;
 }
 
-.about-text span {
-    color: var(--text-secondary);
+.about-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    text-align: left;
 }
+
+.detail-item h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--accent);
+}
+
+.detail-item p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
 
 /* Projects Grid - Bento/Apple Style */
 .section-title {
