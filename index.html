@@ -13,17 +13,19 @@
         <div class="container-nav">
             <nav>
                 <div class="logo-container">
-                    <img src="img/image-1773745396239.png" alt="Foto de perfil" class="profile-img">
-                    <span class="profile-name">Daniel Roblas</span>
-                    <span class="verified-icon" title="Verificado">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" style="vertical-align:middle"><circle cx="12" cy="12" r="12" fill="#2997ff"/><path d="M17 9l-5.5 6L7 12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    </span>
+                    <a href="index.html" style="display:flex; align-items:center; text-decoration:none;">
+                        <img src="img/image-1773745396239.png" alt="Foto de perfil" class="profile-img">
+                        <span class="profile-name">Daniel Roblas</span>
+                        <span class="verified-icon" title="Verificado">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" style="vertical-align:middle"><circle cx="12" cy="12" r="12" fill="#2997ff"/><path d="M17 9l-5.5 6L7 12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </span>
+                    </a>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="#home">Inicio</a></li>
-                    <li><a href="#about">Sobre Mí</a></li>
-                    <li><a href="llistat.html">Proyectos</a></li>
-                    <li><a href="#contact">Contacto</a></li>
+                    <li><a href="#home" class="nav-link">Inicio</a></li>
+                    <li><a href="#about" class="nav-link">Sobre Mí</a></li>
+                    <li><a href="llistat.html" class="nav-link">Proyectos</a></li>
+                    <li><a href="#contact" class="nav-link">Contacto</a></li>
                 </ul>
             </nav>
         </div>
@@ -40,21 +42,40 @@
         <section id="about" class="about-section reveal">
             <div class="container">
                 <div class="about-content">
-                    <h2 class="about-text">
-                        Como Administrador de Sistemas ASIX, mi enfoque va más allá de mantener servidores operativos. Se trata de diseñar arquitecturas que sean invisibles por su eficiencia y robustas por su diseño.
-                    </h2>
-                    <div class="about-details">
-                        <div class="detail-item">
+                    <h2 class="about-text">Sobre mí</h2>
+                    <div class="about-summary" style="margin-bottom:2.5rem; display:flex; align-items:center; gap:2.5rem;">
+                        <img src="img/research_illustration.png" alt="Investigación" style="height:80px; border-radius:18px; box-shadow:0 4px 16px rgba(41,151,255,0.12);">
+                        <p style="flex:1;">Soy estudiante de ASIX en el ITB, apasionado por la tecnología, la automatización y la mejora continua. Busco una oportunidad de prácticas para aportar mi visión técnica y seguir aprendiendo en entornos reales.</p>
+                    </div>
+                    <div class="about-objective" style="margin-bottom:2.5rem; display:flex; align-items:center; gap:2.5rem;">
+                        <img src="img/bash_illustration.png" alt="Bash" style="height:80px; border-radius:18px; box-shadow:0 4px 16px rgba(41,151,255,0.12);">
+                        <div style="flex:1;">
+                            <h3 style="margin-bottom:1rem; color:var(--accent);">¿Qué busco?</h3>
+                            <p>Quiero formar parte de un equipo donde pueda aplicar mis conocimientos en administración de sistemas, scripting y seguridad, y crecer profesionalmente. Me motiva la innovación, el trabajo en equipo y la resolución de problemas.</p>
+                        </div>
+                    </div>
+                    <div class="about-details" style="display:flex; gap:2rem; flex-wrap:wrap; margin-bottom:2.5rem;">
+                        <div class="detail-item" style="flex:1; min-width:220px; background:var(--card-bg); border-radius:18px; box-shadow:0 4px 16px rgba(41,151,255,0.08); padding:2rem; display:flex; flex-direction:column; align-items:center;">
+                            <img src="img/tech_logo.png" alt="Linux" style="height:48px; margin-bottom:1rem;">
                             <h4>Visión Técnica</h4>
-                            <p>Creo en la automatización no solo como una herramienta para ahorrar tiempo, sino como una filosofía para eliminar el error humano y garantizar la consistencia en entornos críticos.</p>
+                            <p style="text-align:center;">Creo en la automatización no solo como una herramienta para ahorrar tiempo, sino como una filosofía para eliminar el error humano y garantizar la consistencia en entornos críticos.</p>
                         </div>
-                        <div class="detail-item">
+                        <div class="detail-item" style="flex:1; min-width:220px; background:var(--card-bg); border-radius:18px; box-shadow:0 4px 16px rgba(41,151,255,0.08); padding:2rem; display:flex; flex-direction:column; align-items:center;">
+                            <img src="img/apolion.png" alt="Especialización" style="height:48px; margin-bottom:1rem;">
                             <h4>Especialización</h4>
-                            <p>Mi formación en el ITB me ha permitido dominar la gestión de redes, la seguridad perimetral y la orquestación de servicios en entornos Linux, siempre con un enfoque pragmático y orientado a resultados.</p>
+                            <p style="text-align:center;">Mi formación en el ITB me ha permitido dominar la gestión de redes, la seguridad perimetral y la orquestación de servicios en entornos Linux, siempre con un enfoque pragmático y orientado a resultados.</p>
                         </div>
-                        <div class="detail-item">
+                        <div class="detail-item" style="flex:1; min-width:220px; background:var(--card-bg); border-radius:18px; box-shadow:0 4px 16px rgba(41,151,255,0.08); padding:2rem; display:flex; flex-direction:column; align-items:center;">
+                            <img src="img/research_illustration.png" alt="Metodología" style="height:48px; margin-bottom:1rem;">
                             <h4>Metodología</h4>
-                            <p>Cada proyecto es una oportunidad para aplicar el rigor del método científico a la resolución de problemas informáticos complejos, desde el scripting en Bash hasta la investigación técnica profunda.</p>
+                            <p style="text-align:center;">Cada proyecto es una oportunidad para aplicar el rigor del método científico a la resolución de problemas informáticos complejos, desde el scripting en Bash hasta la investigación técnica profunda.</p>
+                        </div>
+                    </div>
+                    <div class="about-values" style="margin-top:2.5rem; display:flex; align-items:center; gap:2.5rem;">
+                        <img src="img/research_illustration.png" alt="Valores" style="height:80px; border-radius:18px; box-shadow:0 4px 16px rgba(41,151,255,0.12);">
+                        <div style="flex:1;">
+                            <h3 style="margin-bottom:1rem; color:var(--accent);">Valores e intereses</h3>
+                            <p>Me defino por la curiosidad, el rigor técnico y la pasión por aprender. Disfruto de la investigación, el deporte y los retos intelectuales.</p>
                         </div>
                     </div>
                 </div>

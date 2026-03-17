@@ -63,18 +63,6 @@ header {
     backdrop-filter: saturate(180%) blur(20px);
 }
 
-.logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-right: 0;
-    min-width: 220px;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
 .container-nav {
     display: flex;
     align-items: center;
@@ -88,15 +76,17 @@ nav {
     display: flex;
     align-items: center;
     width: 100%;
-    justify-content: center;
-    gap: 40px;
     position: relative;
 }
 
-.logo-img {
-    height: 24px;
-    width: auto;
-    filter: brightness(0) invert(1);
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 0;
+    min-width: 220px;
+    flex: 0 0 auto;
+    position: static;
 }
 
 .nav-links {
@@ -105,10 +95,16 @@ nav {
     list-style: none;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    height: 100%;
+    background: none;
 }
 
-.nav-links a {
+.nav-link {
     color: var(--accent);
     text-decoration: none;
     font-size: 16px;
@@ -119,11 +115,22 @@ nav {
     box-shadow: none;
     transition: background 0.3s, color 0.3s, box-shadow 0.3s;
     letter-spacing: 0.02em;
+    white-space: nowrap;
+    display: inline-block;
+    min-width: 110px;
+    text-align: center;
 }
 
-.nav-links a:hover {
+.nav-link:hover {
     background: var(--accent-gradient);
     color: #fff;
+    box-shadow: 0 2px 8px 0 rgba(41,151,255,0.10);
+}
+
+.nav-link.active {
+    background: var(--accent-gradient);
+    color: #fff;
+    font-weight: 700;
     box-shadow: 0 2px 8px 0 rgba(41,151,255,0.10);
 }
 
@@ -343,6 +350,39 @@ section {
 .btn-primary:hover {
     background: linear-gradient(90deg, #66b2ff 0%, #2997ff 100%);
     box-shadow: 0 8px 32px 0 rgba(41,151,255,0.22);
+}
+
+/* Logo Container Hover Effect */
+.logo-container a {
+    transition: color 0.3s, filter 0.3s;
+    border-radius: 0;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+    color: var(--text-primary);
+}
+
+.logo-container a:hover, .logo-container a:focus {
+    color: var(--accent);
+    filter: brightness(1.1);
+    background: none;
+    box-shadow: none;
+}
+
+.logo-container a:hover .profile-name,
+.logo-container a:hover .verified-icon {
+    color: var(--accent);
+    filter: brightness(1.2);
+}
+
+.logo-container a:hover .profile-img {
+    border-color: var(--accent);
+}
+
+.logo-container a:active {
+    color: var(--accent-hover);
+    background: none;
+    box-shadow: none;
 }
 
 /* Reveal Animation */
