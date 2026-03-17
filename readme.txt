@@ -17,4 +17,4 @@ Personal website showcasing completed projects. Includes a main page and a proje
 
 ## Deployment
 Website published with GitHub Pages:
-https://itb2526-danielroblas.github.io/Portafolio-Daniel-Roblas/index.html
+https://itb2526-danielroblas.github.io/Antigravity/index.html
