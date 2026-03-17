@@ -78,5 +78,53 @@
      "tags": ["SysAdmin", "Exam"],
      "pdf": "pdf/RoblasSerraDaniel PR-RA5 Examen Pràctic (Grup A).pdf",
      "image": "<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 24 24' fill='none' stroke='var(--accent)' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'><path d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z'/><polyline points='14 2 14 8 20 8'/><path d='m9 15 2 2 4-4'/></svg>"
+  },
+  {
+     "id": 5,
+     "title": "Active Directory I",
+     "description": "Implementación y configuración inicial de Active Directory en Windows Server 2025.",
+     "tags": ["Windows Server", "AD"],
+     "pdf": "pdf/Raúl López Magán y Daniel Roblas Serra - 0369_RA4_AP1 Active Directory W2025 (I).pdf",
+     "image": "<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 24 24' fill='none' stroke='var(--accent)' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'><rect x='2' y='4' width='20' height='16' rx='2' ry='2'/><path d='M10 4v4'/><path d='M2 8h20'/><path d='M6 4v4'/></svg>"
+  },
+  {
+     "id": 6,
+     "title": "Active Directory II",
+     "description": "Gestión avanzada de usuarios, grupos y políticas GPO en Active Directory.",
+     "tags": ["Windows Server", "AD", "GPO"],
+     "pdf": "pdf/Daniel Roblas 0369_RA4_AP2 Active Directory W2025 (II).pdf",
+     "image": "<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 24 24' fill='none' stroke='var(--accent)' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'><path d='M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2'/><circle cx='9' cy='7' r='4'/><path d='M22 21v-2a4 4 0 0 0-3-3.87'/><path d='M16 3.13a4 4 0 0 1 0 7.75'/></svg>"
+  },
+  {
+     "id": 7,
+     "title": "Samba AD I",
+     "description": "Implementación de un controlador de dominio Active Directory utilizando Samba en Linux.",
+     "tags": ["Linux", "Samba", "AD"],
+     "pdf": "pdf/Daniel Roblas 0369_RA4_AP3 Samba AD (I).pdf",
+     "image": "<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 24 24' fill='none' stroke='var(--accent)' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'><ellipse cx='12' cy='5' rx='9' ry='3'/><path d='M3 5V19A9 3 0 0 0 21 19V5'/><path d='M3 12A9 3 0 0 0 21 12'/></svg>"
+  },
+  {
+     "id": 9,
+     "title": "Servicio de Directorio LDAP",
+     "description": "Despliegue y administración de un servicio de directorio basado en LDAP.",
+     "tags": ["Linux", "LDAP"],
+     "pdf": "pdf/Daniel Roblas AP1_RA1 Activitat Servei Directori LDAP (1).pdf",
+     "image": "<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 24 24' fill='none' stroke='var(--accent)' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'><rect x='2' y='4' width='20' height='16' rx='2' ry='2'/><path d='M10 4v4'/><path d='M2 8h20'/><path d='M6 4v4'/></svg>"
+  },
+  {
+     "id": 10,
+     "title": "Roles FSMO en AD",
+     "description": "Mantenimiento y transferencia de roles FSMO en Windows Server Core 2025.",
+     "tags": ["Windows Server", "AD", "Core"],
+     "pdf": "pdf/Daniel AP2_RA1 FSMO en Active Directory W2025 - Server Core (4).pdf",
+     "image": "<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 24 24' fill='none' stroke='var(--accent)' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'><path d='M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z'/><polyline points='3.27 6.96 12 12.01 20.73 6.96'/><line x1='12' y1='22.08' x2='12' y2='12'/></svg>"
+  },
+  {
+     "id": 16,
+     "title": "Arquitectura Hardware",
+     "description": "Análisis y conocimiento profundo de componentes lógicos y físicos de hardware.",
+     "tags": ["Hardware", "Architecture"],
+     "pdf": "pdf/_0371 _RA1_AP2 - Coneixement hardware.pdf",
+     "image": "<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 24 24' fill='none' stroke='var(--accent)' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'><rect x='4' y='4' width='16' height='16' rx='2' ry='2'/><rect x='9' y='9' width='6' height='6'/><line x1='9' y1='1' x2='9' y2='4'/><line x1='15' y1='1' x2='15' y2='4'/><line x1='9' y1='20' x2='9' y2='23'/><line x1='15' y1='20' x2='15' y2='23'/><line x1='20' y1='9' x2='23' y2='9'/><line x1='20' y1='14' x2='23' y2='14'/><line x1='1' y1='9' x2='4' y2='9'/><line x1='1' y1='14' x2='4' y2='14'/></svg>"
   }
 ]
