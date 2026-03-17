@@ -3,7 +3,7 @@ async function loadProjects(limit = null) {
     if (!container) return;
 
     try {
-        const response = await fetch('data/projects.json');
+        const response = await fetch(`data/projects.json?t=${new Date().getTime()}`);
         let projects = await response.json();
 
         if (limit) {
