@@ -5,7 +5,7 @@
     "description": "Automatización avanzada de sistemas Linux.",
     "tags": ["Linux", "Bash"],
     "pdf": "pdf/projecte1-bash.pdf",
-    "image": "img/bash_illustration.png"
+    "image": "img/tech_art.png"
   },
   {
     "id": 2,
@@ -13,6 +13,6 @@
     "description": "Análisis profundo y metodología científica.",
     "tags": ["Research", "Scientific"],
     "pdf": "pdf/projecte2-TDR.pdf",
-    "image": "img/research_illustration.png"
+    "image": "img/about_me.png"
   }
 ]
