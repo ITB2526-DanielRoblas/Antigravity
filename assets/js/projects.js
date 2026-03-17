@@ -10,10 +10,15 @@ async function loadProjects(limit = null) {
             projects = projects.slice(0, limit);
         }
 
-        container.innerHTML = projects.map(project => `
+        container.innerHTML = projects.map(project => {
+            const imageHtml = project.image.startsWith('<svg') 
+                ? project.image 
+                : `<img src="${project.image}" alt="${project.title}">`;
+            
+            return `
             <div class="card reveal">
-                <div class="card-image-container">
-                    <img src="${project.image}" alt="${project.title}">
+                <div class="card-image-container" style="${project.image.startsWith('<svg') ? 'display:flex; align-items:center; justify-content:center; background:rgba(41,151,255,0.05);' : ''}">
+                    ${imageHtml}
                 </div>
                 <div class="card-content">
                     <h3>${project.title}</h3>
@@ -21,7 +26,8 @@ async function loadProjects(limit = null) {
                     <a href="${project.pdf}" class="btn btn-primary" style="width: fit-content;" target="_blank">Leer más</a>
                 </div>
             </div>
-        `).join('');
+            `;
+        }).join('');
 
         // Re-run animation observer
         const observer = new IntersectionObserver((entries) => {
